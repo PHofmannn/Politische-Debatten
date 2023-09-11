@@ -164,8 +164,6 @@ def clean_text(df, custom_stopwords=None):
 
 
 # In[8]:
-
-
 #Methode 4: Zur Darstellung von nGrammen
 
 from collections import Counter
@@ -216,6 +214,9 @@ def plot_most_frequent_ngrams(df, num_most_common=10):
 
     plt.tight_layout()
     plt.show()
+
+
+
 
 
 # In[9]:
