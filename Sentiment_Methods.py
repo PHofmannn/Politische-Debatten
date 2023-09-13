@@ -176,7 +176,7 @@ def plot_most_frequent_ngrams(df, num_most_common=10):
     tokens = list(df['cleaned_text'].values)
 
     # Define your custom stopwords list
-    custom_stopwords = ['Bündnis', '90', 'Grünen', 'CDU', 'CSU-Fraktion', 'Bündnis-90-Grünen']
+    custom_stopwords = ['Bündnis', '90', 'Grünen', 'CDU', 'CSU-Fraktion', ' Bündnis 90 Grünen']
 
     # Count unigrams
     unigram_counts = Counter()
