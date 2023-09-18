@@ -166,35 +166,33 @@ def clean_text(df, custom_stopwords=None):
 # In[8]:
 #Methode 4: Zur Darstellung von nGrammen
 
-from collections import Counter
-
-import matplotlib.pyplot as plt
-from collections import Counter
-
 def plot_most_frequent_ngrams(df, num_most_common=10):
     # Get the tokens from the DataFrame
     tokens = list(df['cleaned_text'].values)
 
     # Define your custom stopwords list
-    custom_stopwords = ['Bündnis', '90', 'Grünen', 'CDU', 'CSU-Fraktion', ' Bündnis 90 Grünen']
+    custom_stopwords = ['Bündnis 90 Grünen', 'CDU', 'CSU-Fraktion','nicht','Bündnis','CSU',' ','-','zwei','Jahre','Jahren',"90","Grünen","Bündnis"]
+
+    # Create a pattern that matches any of the custom stopwords
+    stopwords_pattern = re.compile(r'\b(?:' + '|'.join(re.escape(word) for word in custom_stopwords) + r')\b')
 
     # Count unigrams
     unigram_counts = Counter()
     for text in tokens:
-        unigrams = [word for word in text.split() if word not in custom_stopwords]
+        unigrams = [word for word in re.split(r'\s+', text) if not stopwords_pattern.search(word)]
         unigram_counts.update(unigrams)
 
     # Count bigrams
     bigram_counts = Counter()
     for text in tokens:
-        unigrams = [word for word in text.split() if word not in custom_stopwords]
+        unigrams = [word for word in re.split(r'\s+', text) if not stopwords_pattern.search(word)]
         bigrams = [",".join(bigram) for bigram in zip(unigrams[:-1], unigrams[1:])]
         bigram_counts.update(bigrams)
 
     # Count trigrams
     trigram_counts = Counter()
     for text in tokens:
-        unigrams = [word for word in text.split() if word not in custom_stopwords]
+        unigrams = [word for word in re.split(r'\s+', text) if not stopwords_pattern.search(word)]
         trigrams = [",".join(trigram) for trigram in zip(unigrams[:-2], unigrams[1:-1], unigrams[2:])]
         trigram_counts.update(trigrams)
 
@@ -220,6 +218,7 @@ def plot_most_frequent_ngrams(df, num_most_common=10):
 
     plt.tight_layout()
     plt.show()
+
 
 
 
