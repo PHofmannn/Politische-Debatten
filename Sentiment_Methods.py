@@ -36,7 +36,6 @@ import spacy
 
 # In[5]:
 
-
 #  Methode 1: Gibt alle Reden aus dem DataFrame zurück, die den angegebenen Keywords (+Synonymen) entsprechen (nur und Konjunktion)
 
 from nltk.corpus import wordnet
@@ -70,7 +69,6 @@ def filter_dataframe_by_keywords_with_synonyms(df, keywords):
 
 
 # In[6]:
-
 
 #Methode 2:  Tokenisiert die Sätze in der Spalte 'text' des DataFrames und speichert sie in einem neuen DataFrame.
 
@@ -120,6 +118,7 @@ def tokenize_and_split_sentences(df):
 
 
 #Methode 3: zur Textbereinigung
+
 import string
 from nltk.corpus import stopwords
 nlp = spacy.load('de_core_news_sm')
@@ -162,9 +161,30 @@ def clean_text(df, custom_stopwords=None):
     return df
 
 
+# In[9]:
+
+# Methode 4 zur Modellentwicklung
+
+from transformers import pipeline
+
+def sentiment_analysis(df, text_column):
+    # Define the sentiment analysis model
+    nlp_sentiment = pipeline("sentiment-analysis", model='oliverguhr/german-sentiment-bert')
+
+    # Apply sentiment analysis to the specified text column in the DataFrame
+    df['Sentiment'] = df[text_column].apply(lambda x: nlp_sentiment(x))
+
+    # Extract sentiment label and score
+    df['Sentiment_Label'] = [x[0]['label'] for x in df['Sentiment']]
+    df['Sentiment_Score'] = [x[0]['score'] for x in df['Sentiment']]
+
+    # Remove the 'Sentiment' column
+    df = df.drop(columns=['Sentiment'])
+
+    return df
 
 # In[8]:
-#Methode 4: Zur Darstellung von nGrammen
+#Methode 5: Zur Darstellung von nGrammen
 
 def plot_most_frequent_ngrams(df, num_most_common=10):
     # Get the tokens from the DataFrame
@@ -221,37 +241,7 @@ def plot_most_frequent_ngrams(df, num_most_common=10):
 
 
 
-
-
-
-
-# In[9]:
-
-
-# Methode 5 zur Modellentwicklung
-
-from transformers import pipeline
-
-def sentiment_analysis(df, text_column):
-    # Define the sentiment analysis model
-    nlp_sentiment = pipeline("sentiment-analysis", model='oliverguhr/german-sentiment-bert')
-
-    # Apply sentiment analysis to the specified text column in the DataFrame
-    df['Sentiment'] = df[text_column].apply(lambda x: nlp_sentiment(x))
-
-    # Extract sentiment label and score
-    df['Sentiment_Label'] = [x[0]['label'] for x in df['Sentiment']]
-    df['Sentiment_Score'] = [x[0]['score'] for x in df['Sentiment']]
-
-    # Remove the 'Sentiment' column
-    df = df.drop(columns=['Sentiment'])
-
-    return df
-
-
-
 # In[13]:
-
 
 #Methoden 6 zur Visualisierung des Sentiments
 
