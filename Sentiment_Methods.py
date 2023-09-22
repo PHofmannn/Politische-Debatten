@@ -343,15 +343,33 @@ def plot_sentiment_wordclouds(df):
     for sentiment, group in sentiment_groups:
         text_by_sentiment[sentiment] = ' '.join(group['cleaned_text'].tolist())
 
-    # Generate a word cloud for each sentiment
-    for sentiment, text in text_by_sentiment.items():
+    # Create a grid of subplots for each sentiment
+    num_sentiments = len(text_by_sentiment)
+    num_cols = 2  # Number of columns in the subplot grid
+    num_rows = (num_sentiments + num_cols - 1) // num_cols  # Calculate the number of rows
+
+    fig, axes = plt.subplots(num_rows, num_cols, figsize=(12 * num_cols, 6 * num_rows))
+
+    # Generate and plot word clouds for each sentiment
+    for i, (sentiment, text) in enumerate(text_by_sentiment.items()):
+        row = i // num_cols
+        col = i % num_cols
+
         wordcloud = WordCloud(background_color='black', width=400, height=300, max_words=150, colormap='tab20c').generate(text)
 
-        # Plot the word cloud
-        plt.figure(figsize=(12, 6))
-        plt.imshow(wordcloud, interpolation='bilinear')
-        plt.axis('off')
-        plt.title(sentiment + ' Sentiment Word Cloud')
-        plt.show()
+        # Plot the word cloud in the corresponding subplot
+        axes[row, col].imshow(wordcloud, interpolation='bilinear')
+        axes[row, col].axis('off')
+        axes[row, col].set_title(sentiment + ' Sentiment Word Cloud')
+
+    # Remove any empty subplots
+    for i in range(len(text_by_sentiment), num_rows * num_cols):
+        row = i // num_cols
+        col = i % num_cols
+        fig.delaxes(axes[row, col])
+
+    plt.tight_layout()
+    plt.show()
 
 
+# %%
