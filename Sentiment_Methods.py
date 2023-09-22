@@ -345,31 +345,23 @@ def plot_sentiment_wordclouds(df):
 
     # Create a grid of subplots for each sentiment
     num_sentiments = len(text_by_sentiment)
-    num_cols = 2  # Number of columns in the subplot grid
-    num_rows = (num_sentiments + num_cols - 1) // num_cols  # Calculate the number of rows
+    num_cols = 3  # Number of columns in the subplot grid
+    num_rows = 1  # We want all sentiments in a single row
 
-    fig, axes = plt.subplots(num_rows, num_cols, figsize=(12 * num_cols, 6 * num_rows))
+    fig, axes = plt.subplots(num_rows, num_cols, figsize=(8 * num_cols, 6 * num_rows))
 
     # Generate and plot word clouds for each sentiment
     for i, (sentiment, text) in enumerate(text_by_sentiment.items()):
-        row = i // num_cols
-        col = i % num_cols
-
         wordcloud = WordCloud(background_color='black', width=400, height=300, max_words=150, colormap='tab20c').generate(text)
 
         # Plot the word cloud in the corresponding subplot
-        axes[row, col].imshow(wordcloud, interpolation='bilinear')
-        axes[row, col].axis('off')
-        axes[row, col].set_title(sentiment + ' Sentiment Word Cloud')
-
-    # Remove any empty subplots
-    for i in range(len(text_by_sentiment), num_rows * num_cols):
-        row = i // num_cols
-        col = i % num_cols
-        fig.delaxes(axes[row, col])
+        axes[i].imshow(wordcloud, interpolation='bilinear')
+        axes[i].axis('off')
+        axes[i].set_title(sentiment + ' Sentiment Word Cloud')
 
     plt.tight_layout()
     plt.show()
+
 
 
 # %%
