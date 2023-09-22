@@ -1,0 +1,6 @@
+Variable 1,Variable 2,Correlation,P-Value
+Inzidenz_7-Tage,period,-0.7693227964620456,8.43265836248269e-49
+Inzidenz_7-Tage,Sentiment_Score,-0.019393471956247306,0.7635793676049548
+Inzidenz_7-Tage,Faelle_gesamt,0.5336442798280048,2.748556214170853e-19
+Inzidenz_7-Tage,Faelle_neu,0.9926476046020823,5.008547051205016e-223
+Inzidenz_7-Tage,Faelle_7-Tage,0.99999999627154,0.0
