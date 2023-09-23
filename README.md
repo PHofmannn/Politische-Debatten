@@ -1,6 +1,6 @@
-# Politische Debatten und Polarisierung im Deutschen Bundestag 
+# Seminar Politische Debatten und Polarisierung im Deutschen Bundestag 
 
-**GitHub Repository ReadMe: Emotionen & Entscheidung - Sentiment-Analyse politischer Reden während der Covid-19-Pandemie**
+**Emotionen & Entscheidung: Sentiment-Analyse politischer Reden während der Covid-19-Pandemie**
 
 ![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentScore.png)
 
