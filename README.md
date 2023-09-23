@@ -1,6 +1,6 @@
-# Emotionen & Entscheidung: Sentiment-Analyse politischer Reden während der Covid-19-Pandemie**
+# Emotionen & Entscheidung: Sentiment-Analyse politischer Reden während der Covid-19-Pandemie
 
-**Im Rahmen des Seminars Politische Debatten und Polarisierung im Deutschen Bundestag 
+**Im Rahmen des Seminars Politische Debatten und Polarisierung im Deutschen Bundestag**
 
 ![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentScore.png)
 
