@@ -3,8 +3,8 @@
 **Im Rahmen des Seminars Politische Debatten und Polarisierung im Deutschen Bundestag**
 
 <center>
-   
-![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SChwerpunjt.png) 
+
+![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SChwerpunjt.png)
 
 </center>
    
