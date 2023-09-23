@@ -40,7 +40,7 @@ Die Schritte zur Datenvorbereitung und Filterung der Reden der 19. und 20. Wahlp
 
 ## Mitwirkende
 
-- Paula Hofmann((https://github.com/PHofmannn)
+- Paula Hofmann (https://github.com/PHofmannn)
 
 ## Kontakt
 
@@ -48,7 +48,7 @@ Bei Fragen oder Anmerkungen: paulahofmann@icloud.com
 
 ---
 
-1. [Guhr, Oliver, et al. "Training a broad-coverage German sentiment classification model for dialog systems." Proceedings of the Twelfth Language Resources and Evaluation Conference. 2020]
+1. Guhr, Oliver, et al. "Training a broad-coverage German sentiment classification model for dialog systems." Proceedings of the Twelfth Language Resources and Evaluation Conference. 2020
 
-2. [Klamm, Christopher, Ines Rehbein, and Simone Paolo Ponzetto. "FrameASt: A framework for second-level agenda setting in parliamentary debates through the lens of comparative agenda topics." (2022): 92-100.
-<img width="1359" alt="image" src="https://github.com/PHofmannn/Politische-Debatten/assets/132584414/a10ac027-6c6b-42e1-b197-62cd2c025ec0">]
+2. Klamm, Christopher, Ines Rehbein, and Simone Paolo Ponzetto. "FrameASt: A framework for second-level agenda setting in parliamentary debates through the lens of comparative agenda topics." (2022): 92-100.
+<img width="1359" alt="image" src="https://github.com/PHofmannn/Politische-Debatten/assets/132584414/a10ac027-6c6b-42e1-b197-62cd2c025ec0">
