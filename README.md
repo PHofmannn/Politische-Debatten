@@ -6,7 +6,7 @@
    
 ![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SChwerpunjt.png) 
 
-<center>
+</center>
    
 ![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentScore.png)
 
