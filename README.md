@@ -35,15 +35,15 @@ Meine Analyse basiert auf Transformer-Modellen, die eine robuste und effiziente 
 
 ## Ergebnisse
 
-Die Ergebnisse meiner Analyse wurden im Rahmen eines Posters festgehalten. Hier finden Sie das [Poster.](https://github.com/PHofmannn/Politische-Debatten/blob/main/Emotionen%26Entscheidung_Poster.pdf)
+![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentScore.png)
+
+Die Ergebnisse meiner Analyse wurden im Rahmen eines [Posters](https://github.com/PHofmannn/Politische-Debatten/blob/main/Emotionen%26Entscheidung_Poster.pdf)festgehalten.
 
 Den Code meiner Arbeit findet man [hier.](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentAnalyse.ipynb](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentAnalyse.ipynb))
 
-![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentScore.png)
-
 Die Schritte zur Datenvorbereitung und Filterung der Reden der 19. und 20. Wahlperiode mit der Anwendung der Sentimentanalyse sind [hier zu finden.](https://github.com/PHofmannn/Politische-Debatten/blob/main/Data_Preprocessing.ipynb)
 
-## Mitwirkende
+## Autorin
 
 - Paula Hofmann (https://github.com/PHofmannn)
 
@@ -56,4 +56,4 @@ Bei Fragen oder Anmerkungen: paulahofmann@icloud.com
 1. Guhr, Oliver, et al. "Training a broad-coverage German sentiment classification model for dialog systems." Proceedings of the Twelfth Language Resources and Evaluation Conference. 2020
 
 2. Klamm, Christopher, Ines Rehbein, and Simone Paolo Ponzetto. "FrameASt: A framework for second-level agenda setting in parliamentary debates through the lens of comparative agenda topics." (2022): 92-100.
-<img width="1359" alt="image" src="https://github.com/PHofmannn/Politische-Debatten/assets/132584414/a10ac027-6c6b-42e1-b197-62cd2c025ec0">
+
