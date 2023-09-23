@@ -10,7 +10,7 @@
 
 ## Überblick
 
-In diesem Repository befindet sich der Code und die Daten für die Sentiment-Analyse politischer Reden und Kommunikationen im Kontext der Covid-19-Pandemie. Für die Sentiment-Analyse habe ich Transformer-Modelle <sup>1,2</sup> genutzt, um diese Analyse effizient und zuverlässig durchzuführen.
+In diesem Repository befindet sich der Code und die Daten für die Sentiment-Analyse politischer Reden und Kommunikationen im Kontext der Covid-19-Pandemie. Für die Sentiment-Analyse habe ich Transformer-Modelle<sup>1,2</sup> genutzt, um diese Analyse effizient und zuverlässig durchzuführen.
 
 ## Hintergrund
 
