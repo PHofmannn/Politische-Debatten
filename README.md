@@ -2,11 +2,11 @@
 
 **GitHub Repository ReadMe: Emotionen & Entscheidung - Sentiment-Analyse politischer Reden während der Covid-19-Pandemie**
 
-![Sentiment Analysis](https://github.com/dein-benutzername/dein-repository/blob/main/images/sentiment_analysis.png)
+![Sentiment Analysis](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentScore.png)
 
 ## Überblick
 
-In diesem Repository befindet sich der Code und die Daten für die Sentiment-Analyse politischer Reden und Kommunikationen im Kontext der Covid-19-Pandemie. FÜr die Sentiment-Analyse habe ich Transformer-Modelle gentutzt, um diese Analyse effizient und zuverlässig durchzuführen.
+In diesem Repository befindet sich der Code und die Daten für die Sentiment-Analyse politischer Reden und Kommunikationen im Kontext der Covid-19-Pandemie. Für die Sentiment-Analyse habe ich Transformer-Modelle genutzt, um diese Analyse effizient und zuverlässig durchzuführen.
 
 ## Hintergrund
 
