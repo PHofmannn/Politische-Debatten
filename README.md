@@ -39,7 +39,7 @@ Meine Analyse basiert auf Transformer-Modellen, die eine robuste und effiziente 
 
 Die Ergebnisse meiner Analyse wurden im Rahmen eines [Posters](https://github.com/PHofmannn/Politische-Debatten/blob/main/Emotionen%26Entscheidung_Poster.pdf) festgehalten.
 
-Den Code meiner Arbeit findet man [hier.](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentAnalyse.ipynb](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentAnalyse.ipynb))
+Das jupyter Notebook zu meiner Arbeit findet man [hier.](https://github.com/PHofmannn/Politische-Debatten/blob/main/SentimentAnalyse.ipynb)
 
 Die Schritte zur Datenvorbereitung und Filterung der Reden der 19. und 20. Wahlperiode mit der Anwendung der Sentimentanalyse sind [hier zu finden.](https://github.com/PHofmannn/Politische-Debatten/blob/main/Data_Preprocessing.ipynb)
 
