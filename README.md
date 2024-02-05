@@ -30,7 +30,7 @@ In meiner Arbeit stehen folgende Hauptfragen im Mittelpunkt:
 
 ## Methodik
 
-Meine Analyse basiert auf Transformer-Modellen, die eine robuste und effiziente Methode für die Sentiment-Analyse politischer Reden bieten. Ich verwende offene Datenquellen, das DIP vom [Deutschen Bundestag](https://dip.bundestag.de/über-dip) für die Plenarptrokolle der Bundestagsreden, vom [RKI](https://github.com/robert-koch-institut/COVID-19_7-Tage-Inzidenz_in_Deutschland/blob/main/COVID-19-Faelle_7-Tage-Inzidenz_Deutschland.csv) zur Identifizierung der 7-Tages-Inzidenz, das [oliverguhr/german-sentiment-bert](https://huggingface.co/oliverguhr/german-sentiment-bert) für die Sentiment-Analyse und das [chkla/parlbert-topic-german](https://huggingface.co/chkla/parlbert-topic-german) zur Klassifikation der Themen.
+Meine Analyse basiert auf Transformer-Modellen, die eine robuste und effiziente Methode für die Sentiment-Analyse politischer Reden bieten. Ich verwende offene Datenquellen, das [DIP](https://dip.bundestag.de/über-dip) für die Plenarptrokolle der Bundestagsreden, das GitHub Repository vom [RKI](https://github.com/robert-koch-institut/COVID-19_7-Tage-Inzidenz_in_Deutschland/blob/main/COVID-19-Faelle_7-Tage-Inzidenz_Deutschland.csv) zur Identifizierung der 7-Tages-Inzidenz, das [oliverguhr/german-sentiment-bert](https://huggingface.co/oliverguhr/german-sentiment-bert) für die Sentiment-Analyse und das [chkla/parlbert-topic-german](https://huggingface.co/chkla/parlbert-topic-german) zur Klassifikation der Themen.
 
 ## Ergebnisse
 
